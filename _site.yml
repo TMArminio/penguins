@@ -1,9 +1,11 @@
-name: "our-website"
+name: "penguins"
 navbar:
-  title: "Our Collaborative Website"
+  title: "penguinz"
   left:
-    - text: "Cars"
-      href: index.html
-    - text: "About"
-      href: about.html
+    - text: "Single_trait"
+      href: single_trait.html
+    - text: "Multiple_traits"
+      href: multiple_traits.html
+          - text: "Sexual_dimorphism"
+      href: Sexual_dimorphism.html
 output_dir: "."
