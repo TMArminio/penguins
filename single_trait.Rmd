@@ -1,5 +1,5 @@
 ---
-title: "single_trait.Rmd"
+title: "Single_trait"
 author: "Thomas Arminio"
 date: "2/11/2022"
 output: html_document

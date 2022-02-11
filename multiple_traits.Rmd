@@ -1,5 +1,5 @@
 ---
-title: "multiple_traits.Rmd"
+title: "Multiple_traits"
 author: "Thomas Arminio"
 date: "2/11/2022"
 output: html_document
