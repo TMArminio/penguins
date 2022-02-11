@@ -1,0 +1,19 @@
+---
+title: "single_trait.Rmd"
+author: "Thomas Arminio"
+date: "2/11/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(palmerpenguins)
+library(tidyverse)
+```
+
+## Single trait distribution
+```{r, message = FALSE, warning = FALSE}
+penguins %>%
+  ggplot() +
+  geom_density(mapping = aes(x = bill_length_mm, fill=species), alpha=0.5)
+```

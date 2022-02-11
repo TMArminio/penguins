@@ -1,0 +1,20 @@
+---
+title: "sexual_dimorphism.Rmd"
+author: "Thomas Arminio"
+date: "2/11/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(palmerpenguins)
+library(tidyverse)
+```
+
+## Sexual dimorphism
+```{r, message = FALSE, warning = FALSE}
+penguins %>%
+  ggplot(mapping = aes(x = bill_length_mm, y=bill_depth_mm, color=sex)) +
+  geom_point(size=1) +
+  facet_wrap(~species)
+```

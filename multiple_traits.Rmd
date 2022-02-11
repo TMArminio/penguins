@@ -1,0 +1,20 @@
+---
+title: "multiple_traits.Rmd"
+author: "Thomas Arminio"
+date: "2/11/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(palmerpenguins)
+library(tidyverse)
+```
+
+## Relationship between multiple traits
+```{r, message = FALSE, warning = FALSE}
+penguins %>%
+  ggplot(mapping = aes(x = body_mass_g, y = flipper_length_mm, color = species)) +
+  geom_point() +
+  geom_smooth(method="lm")
+```
